@@ -1,9 +1,11 @@
 import 'dart:convert';
+// ignore: depend_on_referenced_packages
 import 'package:http/http.dart' as http;
+// ignore: depend_on_referenced_packages
 import 'package:flutter3/models/movie.dart';
 
 class TMDBApiService {
-  static const String _apiKey = 'YOUR_TMDB_API_KEY';
+  static const String _apiKey = 'b72eca8734c8fc04b50bdd185647c432';
   static const String _baseUrl = 'https://api.themoviedb.org/3';
 
   Future<List<Movie>> fetchMovies(String category) async {

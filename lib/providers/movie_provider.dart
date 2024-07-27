@@ -5,7 +5,7 @@ import 'package:flutter3/services/tmdb_api_service.dart';
 class MovieProvider with ChangeNotifier {
   final TMDBApiService apiService;
   List<Movie> _movies = [];
-  List<Movie> _favorites = [];
+  final List<Movie> _favorites = [];
   Movie? _selectedMovie;
 
   MovieProvider(this.apiService);

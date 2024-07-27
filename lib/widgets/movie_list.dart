@@ -5,7 +5,7 @@ import 'package:flutter3/screens/movie_detail_screen.dart';
 class MovieList extends StatelessWidget {
   final List<Movie> movies;
 
-  MovieList({required this.movies});
+  const MovieList({super.key, required this.movies});
 
   @override
   Widget build(BuildContext context) {
